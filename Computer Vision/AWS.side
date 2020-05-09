@@ -1,0 +1,119 @@
+{
+  "id": "e6396690-f244-479f-b906-b2a804ed9315",
+  "version": "2.0",
+  "name": "AWS",
+  "url": "https://us-east-2.console.aws.amazon.com/console/home?region=us-east-2#",
+  "tests": [{
+    "id": "92de3455-32ee-4349-9bf3-9cd42d798b74",
+    "name": "aws login",
+    "commands": [{
+      "id": "e2fb242e-4708-49b5-b6aa-0c00217e62e4",
+      "comment": "",
+      "command": "open",
+      "target": "https://us-east-2.signin.aws.amazon.com/oauth?SignatureVersion=4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJMOATPLHVSJ563XQ&X-Amz-Date=2020-05-04T09%3A36%3A27.362Z&X-Amz-Signature=54ee1834c3b0fac79074cd32268b2360903b3a130f1cbca277a8e7b8c2425bbe&X-Amz-SignedHeaders=host&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fhomepage&code_challenge=XjzqDv4JchuOSDluqy5_r1AvrX--6k8SRSee7tpYSKg&code_challenge_method=SHA-256&redirect_uri=https%3A%2F%2Fus-east-2.console.aws.amazon.com%2Fconsole%2Fhome%3Fregion%3Dus-east-2%26state%3DhashArgs%2523%26isauthcode%3Dtrue&region=us-east-2&response_type=code&state=hashArgs%23",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f1cb2fa-eed2-4413-8c3c-1831b8579843",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "382575f8-6826-4f6e-b0da-0b2dcc35405e",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='accountFields']/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0625fd08-90aa-439a-bf23-9e965814af38",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='accountFields']/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sampath.b@falainacloud.com"
+    }, {
+      "id": "f535c178-4be0-4a6a-a0c3-bab4adb57c17",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='accountFields']/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7106ede4-7e64-4e7e-b51b-01cdef1e87e0",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='accountFields']/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "@bcd4321"
+    }, {
+      "id": "c3c6be75-393d-4004-ba1b-94f9a17e2563",
+      "comment": "",
+      "command": "click",
+      "target": "id=signin_button",
+      "targets": [
+        ["id=signin_button", "id"],
+        ["linkText=Sign in", "linkText"],
+        ["css=#signin_button", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//a[@id='signin_button']", "xpath:attributes"],
+        ["xpath=//div[@id='input_signin_button']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07ce7bdc-cc0c-4ff7-a3b5-c2ff7913aa9f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#aws-services > .awsui-util-container-header",
+      "targets": [
+        ["css=#aws-services > .awsui-util-container-header", "css:finder"],
+        ["xpath=//div[@id='aws-services']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "efb38117-6e4f-4e3b-809e-1567e63cbb5f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["92de3455-32ee-4349-9bf3-9cd42d798b74"]
+  }],
+  "urls": ["https://us-east-2.console.aws.amazon.com/console/home?region=us-east-2#"],
+  "plugins": []
+}
